@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media(max-width: 1210px) {
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.header {
+    background-color: #0A2640;
+    padding: 56px 0 64px 0;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    margin-bottom: 84px;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    background: #1C3D5B;
+    width: 1293px;
+    height: 1293px;
+    right: -646.5px;
+    top: -789px;
+    border-radius: 1293px;
+    z-index: -1;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__menu__links {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu__link--button {
+    padding: 8px 40px;
+    background-color: white;
+    color: #0A2640;
+    border-radius: 24px;
+}
+
+.header__info {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info__text {
+    max-width: 567px;
+}
+
+.info__title {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.info__describe {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #F1F1F1;
+    margin-bottom: 56px;
+}
+
+.info__button {
+    display: inline-block;
+    padding: 16px 56px;
+    border: 2px solid #FFFFFF;
+    border-radius: 56px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.info__button--green {
+    background: #65E4A3;
+    border: 2px solid #69E6A6;
+    color: #0A2640;
+    margin-right: 24px;
+}
+
+.header__gradient {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    position: relative;
+}
+
+.header__gradient::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, #0A2640 0%, rgba(10, 38, 64, 0.109375) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0A2640 97.87%);
+}
+
+
+/* SERVICES */
+
+
+.title {
+    max-width: 842px;
+    margin: auto;
+    text-align: center;
+}
+
+.title__small {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #777777;
+}
+
+.title__big {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+.service__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__card {
+    width: 300px;
+}
+
+.service__card__photo {
+    margin-bottom: 24px;
+}
+
+.service__card__title {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.service__card__text {
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #777777;
+}
+
+.service__card__button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #0A2640;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    gap: 12px;
+    border-bottom: 1px solid #0A2640;
+    padding-bottom: 8px;
+}
+
+
+/* INFO */
+
+
+.info {
+    padding-top: 71px;
+    padding-bottom: 120px;
+}
+  
+.info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.info__content {
+    width: 500px;
+}
+  
+.info__content__title {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+    margin-bottom: 64px;
+}
+  
+.info__items {
+    list-style: none;
+}
+  
+.info__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+  
+.info__item--dark {
+    background: #0a2640;
+    color: #ffffff;
+}
+  
+.info__item-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
